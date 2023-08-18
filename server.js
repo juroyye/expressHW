@@ -41,8 +41,8 @@ app.get('/mariecia', (req, res) => {
     res.send(' <h1> Mariecias Page </h1>')
 })
 
-app.get('/keiara', (req, res) => {
-    res.send(' <h1> Keiaras Page </h1>')
+app.get('/keiara/:input', (req, res) => {
+    res.send(` <h1> Keiaras ${req.params.input} Page </h1>`)
 })
 
 app.get('/liani', (req, res) => {
@@ -52,14 +52,6 @@ app.get('/liani', (req, res) => {
 app.get('/:input', (req, res) => {
     res.send(` <h1> ${req.params.input} Page </h1>`)
 })
-
-
-
-
-
-
-
-
 
 
 
