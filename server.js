@@ -18,7 +18,7 @@ app.get('/tia', (req, res) => {
 })
 
 app.get('/omar', (req, res) => {
-    res.send(' <h1> Omars Page </h1>')
+    res.send(' <h1> Omars Page  </h1>')
 })
 
 app.get('/sharla', (req, res) => {
@@ -48,6 +48,12 @@ app.get('/keiara', (req, res) => {
 app.get('/liani', (req, res) => {
     res.send(' <h1> Lianis Page </h1>')
 })
+
+app.get('/:input', (req, res) => {
+    res.send(` <h1> ${req.params.input} Page </h1>`)
+})
+
+
 
 
 
